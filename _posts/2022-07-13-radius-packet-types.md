@@ -160,7 +160,7 @@ Looking at the RADIUS section of the access-accept packet we see the following:
 
 ![labuser-access-accept](/assets/img/07122022/labuser-access-accept.png)
 
-By sending down the VSA Cisco-AVPair we are able to tell the router to set the users privilege level to 15. 
+By sending down the VSA Cisco-AVPair we are able to tell the router to set the users privilege level to 2. 
 
 ![labuser-priv2](/assets/img/07122022/priv2.png)
 
