@@ -14,8 +14,8 @@ author: Jacob Toothman
 # --- List of links in the navigation bar --- #
 
 navbar-links:
+  Home: "https://synsandacks.github.io/"
   About Me: "aboutme"
-  Author's home: "https://deanattali.com"
 
 # --- Logo --- #
 
