@@ -40,7 +40,7 @@ To leverage vendor specific attributes (VSA) within ISE you need to have them de
 
 # Lab Setup
 
-So just a high level overview of this lab environment. It's a fresh install of ISE 2.6 running and EVAL VM. I also have eve-ng community edition running a single IOSv router. That router has a single connection to a cloud network allowing interaction with the ISE node hosted outside of eve. 
+So just a high level overview of this lab environment. I have a fresh install of ISE 2.6. I also have eve-ng community edition running a single IOSv router. The router has a single connection to a cloud network allowing interaction with the ISE node hosted outside of eve. 
 
 Since I have limited resources (desktop computer) I opted to leverage local users and groups within ISE for my policy. Typically you would expect to see Active Directory leveraged for this.
 
@@ -148,7 +148,7 @@ When we attempt to login to the labrouter via SSH using the username `labuser` w
 
 ![labuser-packets](/assets/img/07122022/labuser-packets.png)
 
-The access-request packet looks exactly the same as the previous example with the exception of the user-name and password being different. For brevity we will only examine the access-accept packet sent back from ISE.
+Again, we will be skipping the Access-Accept packet for brevity.
 
 Looking at the RADIUS section of the access-accept packet we see the following:
 
@@ -166,6 +166,6 @@ By sending down the VSA Cisco-AVPair we are able to tell the router to set the u
 
 ## Closing Thoughts
 
-Although we can lock down a users session to specific privilege levels RADIUS isn't the preferred AAA protocol for device administration. Maybe I will follow up with another post about TACACS.
+Although we can lock down a users session to specific privilege levels, RADIUS isn't the preferred AAA protocol for device administration. TACACS allows for much more control over what user is authorized to do. Perhaps I will cover TACACS in detail in a future post. 
 
 [Download associated PCAP.](/assets/img/07122022/radius-packets.pcap)
